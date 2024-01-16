@@ -6,19 +6,36 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "mock": "npx tsx watch ./app/mocks/http.ts"
   },
   "dependencies": {
+    "@stylexjs/open-props": "^0.4.1",
+    "@stylexjs/stylex": "^0.4.1",
+    "@tanstack/react-query": "^5.4.3",
+    "next": "14.0.4",
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.0.4"
+    "recoil": "^0.7.7"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@babel/plugin-transform-private-methods": "^7.23.3",
+    "@stylexjs/babel-plugin": "^0.4.1",
+    "@stylexjs/eslint-plugin": "^0.4.1",
+    "@stylexjs/nextjs-plugin": "^0.4.1",
+    "@tanstack/react-query-devtools": "^5.4.3",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "eslint": "^8",
-    "eslint-config-next": "14.0.4"
+    "eslint-config-next": "14.0.4",
+    "msw": "^2.0.8",
+    "prettier": "^2.8.1",
+    "typescript": "^5"
+  },
+  "msw": {
+    "workerDirectory": [
+      "public"
+    ]
   }
 }
