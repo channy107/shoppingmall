@@ -1,3 +1,11 @@
+import Best from './_components/Best';
+import Slider from './_components/Slider';
+
 export default function Home() {
-  return <main>홈 화면</main>;
+  return (
+    <main>
+      <Slider />
+      <Best />
+    </main>
+  );
 }

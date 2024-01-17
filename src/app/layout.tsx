@@ -3,6 +3,7 @@ import RQProvider from '@/app/_components/RQProvider';
 import RecoilProvider from '@/app/_components/RecoilProvider';
 import { MSWComponent } from '@/app/_components/MSWComponent';
 import Header from '@/app/_components/Header';
+
 import './globals.css';
 
 export const metadata: Metadata = {

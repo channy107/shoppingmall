@@ -3,5 +3,13 @@ const stylexPlugin = require('@stylexjs/nextjs-plugin');
 
 module.exports = stylexPlugin({
   rootDir: __dirname,
-  useCSSLayers: true,
-})({});
+})({
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'source.unsplash.com',
+      },
+    ],
+  },
+});
